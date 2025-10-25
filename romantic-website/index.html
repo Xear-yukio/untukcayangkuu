@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Untuk Sayangkuu Cintakuu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Navigasi utama">
+    <div class="nav__brand">Kisah Kitaaa</div>
+    <div class="nav__links">
+      <a href="#letter">Surat</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#story">Cerita</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="letter" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <main class="hero__card" role="main">
+      <h1 id="hero-title" class="hero__title">Untuk Pacar akuu yang sangat cantik💌</h1>
+      <p class="hero__subtitle">Website sederhana buat kita nyimpen cerita, foto, dan kenangan kita berduaa.</p>
+
+      <section class="letter" id="letter-content" aria-live="polite"></section>
+
+      <div class="hero__controls">
+        <button id="btn-open-gallery" class="btn">Lihat Galeri Kita 📸</button>
+        <button id="btn-open-story" class="btn btn--ghost">Baca Cerita Kita ✨</button>
+      </div>
+
+      <div class="hero__extras">
+        <button id="music-play" class="icon-btn" title="Putar / Jeda Musik">▶</button>
+        <span class="muted">Putar lagu kita 💞</span>
+      </div>
+    </main>
+  </header>
+
+  <section class="section" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <h2 id="gallery-title">Galeri Kenangan Kita Gayss📷</h2>
+      <p class="muted">Sedikit moment yang kita abadikan, Berjuta kenangan yang sudah kita buat dan lalui yaa sayangggkuu cintakuu</p>
+
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="story" aria-labelledby="story-title">
+    <div class="container">
+      <h2 id="story-title">Cerita Kitaaa Bersamaa ✨</h2>
+      <div class="story">
+        <article class="story__card">
+          <h3>Bab 1 — Waktu Pertama Kita Ketemuu</h3>
+          <p>Masiii inget ndaa yangg? Hari itu cuma hari yang biasa aja, tapi sekarang kita sudah sampai sejauh iniii. Kayanya... kita jodohhh gasehh</p>
+        </article>
+
+        <article class="story__card">
+          <h3>Bab 2 — Hari-hari Bareng Pacarkuuu</h3>
+          <p>Entah kenapaa ya gayss, hal sederhanaa tuu jadi berharga banget kalau dilakuinn sama pasangan kitaa. Muklsi dari obrolan random, bahkan sampe julidin orang anjir semua jadi hall jadi seruu kaloo sama kamuu sayangkuuu mwehehee.</p>
+        </article>
+
+        <article class="story__card">
+          <h3>Bab 3 — Janji & Harapan Kita</h3>
+          <p>Aku Janji bakal selalu jadi sesorang yang bisa kamu percaya sayangg, ngelewatin semua masalahhh mau itu besar atau kecill, ngebuat lebih banyak moment lagiii, asal semua hal ada kamu nya... pasti dunia bakal jadi jauh lebih indah sayang</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Lihat foto">
+    <button id="lightbox-close" class="lightbox__close" aria-label="Tutup">✕</button>
+    <img id="lightbox-img" src="" alt="Foto kenangan" />
+    <div id="lightbox-caption" class="lightbox__caption"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>dengan penuh cintaaa ❤️ to Dinar Arindhita Cesaria, Pacarku yang sangat aku Cintai, Sayangi, Sukai, Dan Aku Hargai.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

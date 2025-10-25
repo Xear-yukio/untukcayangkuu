@@ -1,0 +1,289 @@
+/* 🌸 Gaya Umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f6f7fb, #ffffff);
+  color: #2e2e2e;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* 🌺 Navigasi */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+  z-index: 999;
+}
+
+.nav__brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #7b5cf5;
+  letter-spacing: 0.5px;
+}
+
+.nav__links a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+  color: #7b5cf5;
+}
+
+/* 💌 Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(135deg, #d8caff, #f7f4ff, #ffffff);
+  color: #333;
+  position: relative;
+  padding: 100px 20px;
+}
+
+.hero__card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.5);
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  color: #2e2e2e;
+  max-width: 700px;
+  transition: 0.3s ease;
+}
+
+.hero__card:hover {
+  transform: translateY(-4px);
+}
+
+.hero__title {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #5b4bf4;
+}
+
+.hero__subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* Tombol */
+.btn {
+  background: #5b4bf4;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #7b5cf5;
+  transform: scale(1.05);
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 2px solid #5b4bf4;
+  color: #5b4bf4;
+}
+
+.btn--ghost:hover {
+  background: #5b4bf4;
+  color: #fff;
+}
+
+.btn--danger {
+  background: #e74c3c;
+}
+
+.icon-btn {
+  border: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon-btn:hover {
+  background: #ece9ff;
+}
+
+/* 🎵 Musik */
+.hero__extras {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__extras span {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #7b5cf5;
+}
+
+/* 📸 Galeri */
+.section {
+  padding: 100px 20px;
+}
+
+.section--alt {
+  background: #f9f8ff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5b4bf4;
+  margin-bottom: 20px;
+}
+
+.muted {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.08);
+}
+
+/* ✨ Cerita */
+.story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.story__card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  border: 1px solid #f0eefc;
+}
+
+.story__card:hover {
+  transform: translateY(-5px);
+}
+
+/* 💡 Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox__caption {
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* ❤️ Footer */
+.footer {
+  background: linear-gradient(135deg, #5b4bf4, #7b5cf5);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer__inner {
+  max-width: 900px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
